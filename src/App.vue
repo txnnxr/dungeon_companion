@@ -1,9 +1,16 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+      <b-navbar toggleable="lg" type="dark" variant="dark">
+          <b-navbar-brand href="/">DM Companion</b-navbar-brand>
+          <b-navbar-toggle target="nav_collapse" />
+          <b-collapse is-nav id="nav_collapse">
+            <b-navbar-nav class="ml-auto">
+              <b-nav-item href="/about">About</b-nav-item>
+              <b-nav-item href="/random-tables">Random Tables</b-nav-item>
+            </b-navbar-nav>
+            </b-navbar-nav>
+          </b-collapse>
+        </b-navbar>
     <router-view/>
   </div>
 </template>
