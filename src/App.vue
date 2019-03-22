@@ -8,7 +8,6 @@
               <b-nav-item href="/about">About</b-nav-item>
               <b-nav-item href="/random-tables">Random Tables</b-nav-item>
             </b-navbar-nav>
-            </b-navbar-nav>
           </b-collapse>
         </b-navbar>
     <router-view/>

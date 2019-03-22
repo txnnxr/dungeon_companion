@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import RandomTables from './views/RandomTables.vue'
-import RandomTable from './views/RandomTable.vue'
 
 Vue.use(Router)
 
@@ -31,7 +30,8 @@ export default new Router({
     {
         path: '/random-tables/:id',
         name: 'randomTable',
-        component: RandomTable
+        component: RandomTables,
+        props: true
     }
   ]
 })
